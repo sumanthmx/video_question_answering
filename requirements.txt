@@ -1,7 +1,7 @@
 fastapi
 uvicorn
 python-multipart
-pytube
+pytubefix
 openai
 opencv-python
 requests
