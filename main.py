@@ -80,16 +80,7 @@ async def search(video_url: str = Form(...), query: str = Form(...)):
         llm_response = result.choices[0].message.content
 
         return {
-            "answersInText": [
-                {
-                    "number": 1,
-                    "relevantTextFromDocument": llm_response,
-                    "sourceLink": video_url,
-                    "documentTitle": "GPT-4V Response"
-                }
-            ],
             "fullJson": {
-                "query": query,
                 "llmResponse": llm_response
             }
         }
